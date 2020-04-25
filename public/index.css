@@ -1,0 +1,70 @@
+:root {
+    --blueColor: #107896;
+    --OrangeColor: #c2571a;
+    --yellowColor: #bca136;
+    --greenColor: #829356;
+    --redColor: #9a2617;
+    --greyColor: #dddddd;
+}
+
+.columns {
+    display: flex;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.columns div {
+    flex: 1;
+}
+
+.column_center {
+    order: 2;
+}
+
+body {
+    text-align: center;
+    color: var(--greyColor);
+    font-family: "Exo", sans-serif;
+    background-color: var(--blueColor);
+}
+
+button {
+    background-color: var(--OrangeColor);
+    color: var(--greyColor);
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+    border: 0;
+    font-size: 18px;
+}
+button:active {
+    background-color: var(--redColor);
+    color: var(--greyColor);
+}
+
+.credit {
+    text-decoration: none;
+    color: var(--greyColor);
+    margin-right: 100px;
+    text-align: right;
+}
+/* unvisited link */
+a:link {
+    color: var(--greyColor);
+}
+
+/* visited link */
+a:visited {
+    color: var(--greyColor);
+}
+
+/* mouse over link */
+a:hover {
+    color: var(--greyColor);
+}
+
+/* selected link */
+a:active {
+    color: var(--greyColor);
+}

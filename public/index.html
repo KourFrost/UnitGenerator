@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Unit Generator</title>
+        <script src="index.js"></script>
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Exo&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body onload="genrateUnits()">
+        <div class="title">
+            <h1>SC2 Unit Generator</h1>
+            <button onclick="genrateUnits()" class="btn-roll">Roll</button>
+        </div>
+        <section class="columns">
+            <div class="column-left">
+                <h2>Terran</h2>
+                <p id="terran"></p>
+            </div>
+            <div class="column-center">
+                <h2>Zerg</h2>
+                <p id="zerg"></p>
+            </div>
+            <div class="column-right">
+                <h2>Protoss</h2>
+                <p id="protoss"></p>
+            </div>
+        </section>
+        <p class="credit">
+            By
+            <a href="http://about.jacobherrmann.tech/">JacobHerrmann.tech</a>
+        </p>
+    </body>
+</html>
