@@ -32,11 +32,19 @@
 
         <div>
             <button class="togglebutton" onclick="collapseDiv()">
-                Rules
+                Pool Filters
             </button>
-            <div hidden="" id="tooltip">
+            <div hidden="" id="rulebox">
                 <!-- Rectangular switch -->
-                <p>Can Attack Buildings</p>
+                <div>
+                    <p class="tooltip">
+                        Can Damage Buildings
+                        <span class="tooltiptext"
+                            >removes units that can't win the game, like
+                            Phoenixes or Widow Mines</span
+                        >
+                    </p>
+                </div>
                 <label class="switch">
                     <input
                         id="AB"
@@ -45,12 +53,28 @@
                     />
                     <span class="slider round"></span>
                 </label>
-                <p>Include Medivacs/Vipers</p>
+                <div>
+                    <p class="tooltip">
+                        Include Medivacs/Vipers
+                        <span class="tooltiptext"
+                            >lame units for monobattles, but knock yourself
+                            out</span
+                        >
+                    </p>
+                </div>
+
                 <label class="switch">
                     <input id="MV" type="checkbox" onclick="supportToggle()" />
                     <span class="slider round"></span>
                 </label>
-                <p>Include Ground Units</p>
+                <div>
+                    <p class="tooltip">
+                        Include Ground Units
+                        <span class="tooltiptext"
+                            >units that touch the earth</span
+                        >
+                    </p>
+                </div>
                 <label class="switch">
                     <input
                         id="GU"
@@ -60,13 +84,23 @@
                     <span class="slider round"></span>
                 </label>
 
-                <p>Include Air Units</p>
+                <div>
+                    <p class="tooltip">
+                        Include Air Units
+                        <span class="tooltiptext">units that defy gravity</span>
+                    </p>
+                </div>
                 <label class="switch">
                     <input id="AU" type="checkbox" onclick="airUnitsToggle()" />
                     <span class="slider round"></span>
                 </label>
+                <div>
+                    <p class="tooltip">
+                        Include Teir 1 Units
+                        <span class="tooltiptext">units you rush with</span>
+                    </p>
+                </div>
 
-                <p>Include Teir 1 Units</p>
                 <label class="switch">
                     <input
                         id="teir1"
@@ -76,7 +110,12 @@
                     <span class="slider round"></span>
                 </label>
 
-                <p>Include Teir 2 Units</p>
+                <div>
+                    <p class="tooltip">
+                        Include Teir 2 Units
+                        <span class="tooltiptext">mid game units</span>
+                    </p>
+                </div>
                 <label class="switch">
                     <input
                         id="teir2"
@@ -85,8 +124,14 @@
                     />
                     <span class="slider round"></span>
                 </label>
-
-                <p>Include Teir 3 Units</p>
+                <div>
+                    <p class="tooltip">
+                        Include Teir 3 Units
+                        <span class="tooltiptext"
+                            >units she told you not to worry about</span
+                        >
+                    </p>
+                </div>
                 <label class="switch">
                     <input
                         id="teir3"
@@ -95,8 +140,12 @@
                     />
                     <span class="slider round"></span>
                 </label>
-
-                <p>Not Enough Profanity</p>
+                <div>
+                    <p class="tooltip">
+                        Not Enough Profanity
+                        <span class="tooltiptext">are you swearing yet?</span>
+                    </p>
+                </div>
                 <label class="switch">
                     <input
                         id="pro"

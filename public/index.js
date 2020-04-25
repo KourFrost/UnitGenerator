@@ -466,8 +466,8 @@ function genrateUnits() {
 }
 
 function collapseDiv() {
-    document.getElementById("tooltip").hidden = !document.getElementById(
-        "tooltip"
+    document.getElementById("rulebox").hidden = !document.getElementById(
+        "rulebox"
     ).hidden;
 }
 
