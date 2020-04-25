@@ -10,10 +10,10 @@
             rel="stylesheet"
         />
     </head>
-    <body onload="genrateUnits()">
+    <body onload="onStart()">
         <div class="title">
             <h1>SC2 Unit Generator</h1>
-            <button onclick="genrateUnits()" class="btn-roll">Roll</button>
+            <button onclick="genrateUnitsPara()" class="btnoll">Roll</button>
         </div>
         <section class="columns">
             <div class="column-left">
@@ -29,9 +29,92 @@
                 <p id="protoss"></p>
             </div>
         </section>
+
+        <div>
+            <button class="togglebutton" onclick="collapseDiv()">
+                Rules
+            </button>
+            <div hidden="" id="tooltip">
+                <!-- Rectangular switch -->
+                <p>Can Attack Buildings</p>
+                <label class="switch">
+                    <input
+                        id="AB"
+                        type="checkbox"
+                        onclick="AttackGroundToggle()"
+                    />
+                    <span class="slider round"></span>
+                </label>
+                <p>Include Medivacs/Vipers</p>
+                <label class="switch">
+                    <input id="MV" type="checkbox" onclick="supportToggle()" />
+                    <span class="slider round"></span>
+                </label>
+                <p>Include Ground Units</p>
+                <label class="switch">
+                    <input
+                        id="GU"
+                        type="checkbox"
+                        onclick="groundUnitsToggle()"
+                    />
+                    <span class="slider round"></span>
+                </label>
+
+                <p>Include Air Units</p>
+                <label class="switch">
+                    <input id="AU" type="checkbox" onclick="airUnitsToggle()" />
+                    <span class="slider round"></span>
+                </label>
+
+                <p>Include Teir 1 Units</p>
+                <label class="switch">
+                    <input
+                        id="teir1"
+                        type="checkbox"
+                        onclick="teir1toggle(1)"
+                    />
+                    <span class="slider round"></span>
+                </label>
+
+                <p>Include Teir 2 Units</p>
+                <label class="switch">
+                    <input
+                        id="teir2"
+                        type="checkbox"
+                        onclick="teir1toggle(2)"
+                    />
+                    <span class="slider round"></span>
+                </label>
+
+                <p>Include Teir 3 Units</p>
+                <label class="switch">
+                    <input
+                        id="teir3"
+                        type="checkbox"
+                        onclick="teir1toggle(3)"
+                    />
+                    <span class="slider round"></span>
+                </label>
+
+                <p>Not Enough Profanity</p>
+                <label class="switch">
+                    <input
+                        id="pro"
+                        type="checkbox"
+                        onclick="profanityToggle()"
+                    />
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
         <p class="credit">
             By
-            <a href="http://about.jacobherrmann.tech/">JacobHerrmann.tech</a>
+            <a href="https://www.linkedin.com/in/jacob-herrmann-545b44167/"
+                >Jacob Herrmann</a
+            >
+        </p>
+        <p class="credit">
+            <a href="https://github.com/KourFrost/UnitGenerator">github</a>
         </p>
     </body>
 </html>
