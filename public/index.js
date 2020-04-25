@@ -496,6 +496,7 @@ function teir1toggle(teir) {
 
     if (!teir2 && !teir3) {
         document.getElementById("AU").checked = false;
+        airUnitsToggle();
     }
 
     if (!teir1 && !teir2 && !teir3) {
