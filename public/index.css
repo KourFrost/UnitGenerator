@@ -11,8 +11,6 @@
 
 .columns {
     display: flex;
-    margin-left: 150px;
-    margin-right: 150px;
 }
 
 .columns div {
@@ -63,7 +61,7 @@ button:active {
 .credit {
     text-decoration: none;
     color: var(--greyColor);
-    margin-right: 100px;
+
     text-align: right;
 }
 /* unvisited link */
